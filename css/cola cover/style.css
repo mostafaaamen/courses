@@ -1,0 +1,35 @@
+.banner{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.banner .main{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    bottom: 170px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+    transition: 0.7s;
+    --left:0px;
+}
+
+.banner .main .cola{
+    background: 
+    url(/palestine.png) var(--left)  0,
+    url(/cola.png);
+    background-size: auto 100%;
+    width: 280px;
+    aspect-ratio: 2/4.2;
+    background-blend-mode: multiply;
+    mask-image: url(/cola.png);
+    mask-size: auto 100%;
+    transition: 0.7s;
+}
+
+.banner .main:hover{
+    --left:-285px
+}
